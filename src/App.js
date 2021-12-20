@@ -1,7 +1,21 @@
 import ImageCards from "./Cards/Cards";
-
 import "./App.css";
 import styled from "styled-components";
+import { Routes, Route, Link } from "react-router-dom";
+
+function About() {
+  return (
+    <>
+      <main>
+        <h2>Who are we?</h2>
+        <p>That feels like an existential question, don't you think?</p>
+      </main>
+      <nav>
+        <Link to="/">Home</Link>
+      </nav>
+    </>
+  );
+}
 
 function App() {
   return (
@@ -19,7 +33,10 @@ function App() {
             <div className="smallHeaderText">Contact Me</div>
           </div>
         </HeaderBar>
-        <ImageCards />
+        <Routes>
+          <Route path="/" element={<ImageCards />} />
+          <Route path="about" element={<About />} />
+        </Routes>
       </header>
     </div>
   );
@@ -37,3 +54,8 @@ const HeaderBar = styled.h2`
   width: 96%;
   padding: 0 1vw 0 1vw;
 `;
+
+/*
+     
+
+      */
