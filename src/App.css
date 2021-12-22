@@ -15,7 +15,6 @@
 
 .App-header {
   background-color: whitesmoke; /* #282c34; */
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,17 +83,24 @@
 }
 
 .image__title {
-  font-size: 2em;
+  font-size: 3.5vw;
   font-weight: bold;
   color: black;
   font-style: italic;
 }
 
 .image__description {
-  font-size: 1.25em;
+  font-size: 2.5vw;
   margin-top: 0.25em;
   color: black;
 }
+
+.image__description__2 {
+  font-size: 1em;
+  margin-top: 0.25em;
+  color: black;
+}
+
 .smallHeaderText {
   color: darkgray;
   font-size: calc(10px + 1.2vmin);

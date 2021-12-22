@@ -2,29 +2,20 @@ import ImageCards from "./Cards/Cards";
 import "./App.css";
 import styled from "styled-components";
 import { Routes, Route, Link } from "react-router-dom";
-
-function About() {
-  return (
-    <>
-      <main>
-        <h2>Who are we?</h2>
-        <p>That feels like an existential question, don't you think?</p>
-      </main>
-      <nav>
-        <Link to="/">Home</Link>
-      </nav>
-    </>
-  );
-}
+import KadeDownloads from "./KADE/KadeDownloads";
+import KadeDescription from "./KADE/KadeDescription";
+import KadeUserManual from "./KADE/KadeUserManual";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Container className="App-header">
         <HeaderBar>
           <div className="displayRow">
             <div className="margin-Right">S. Banasick </div>
-            <div className="smallHeaderText">Q Methodology Software</div>
+            <Link className="smallHeaderText" to="/">
+              Q Methodology Software
+            </Link>
           </div>
           <div className="displayRow">
             <div className="margin-Right smallHeaderText">
@@ -33,11 +24,15 @@ function App() {
             <div className="smallHeaderText">Contact Me</div>
           </div>
         </HeaderBar>
-        <Routes>
-          <Route path="/" element={<ImageCards />} />
-          <Route path="about" element={<About />} />
-        </Routes>
-      </header>
+        <Content>
+          <Routes>
+            <Route path="/" element={<ImageCards />} />
+            <Route path="Kade_Downloads" element={<KadeDownloads />} />
+            <Route path="Kade_Description" element={<KadeDescription />} />
+            <Route path="Kade_UserManual" element={<KadeUserManual />} />
+          </Routes>
+        </Content>
+      </Container>
     </div>
   );
 }
@@ -53,9 +48,16 @@ const HeaderBar = styled.h2`
   font-size: calc(10px + 3vmin);
   width: 96%;
   padding: 0 1vw 0 1vw;
+  height: 40px;
 `;
 
-/*
-     
+const Container = styled.div`
+  width: 100%;
+`;
 
-      */
+const Content = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 96%%;
+`;
