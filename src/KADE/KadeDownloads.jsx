@@ -13,6 +13,5 @@ export default KadeDownloads;
 
 const Container = styled.div`
   color: black;
-  width: 96%;
-  height: calc(100vh - 100px);
+  height: 100vh;
 `;
