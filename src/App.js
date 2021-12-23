@@ -5,6 +5,12 @@ import { Routes, Route, Link } from "react-router-dom";
 import KadeDownloads from "./KADE/KadeDownloads";
 import KadeDescription from "./KADE/KadeDescription";
 import KadeUserManual from "./KADE/KadeUserManual";
+import EqWebSortDescription from "./EqWebSort/EqWebSortDescription";
+import EqWebSortDownloads from "./EqWebSort/EqWebSortDownloads";
+import EqWebSortUserManual from "./EqWebSort/EqWebSortUserManual";
+import EqWebConfigDescription from "./EqWebConfig/EqWebConfigDescription";
+import EqWebConfigDownloads from "./EqWebConfig/EqWebConfigDownloads";
+import EqWebConfigUserManual from "./EqWebSort/EqWebConfigUserManual";
 
 function App() {
   return (
@@ -30,6 +36,30 @@ function App() {
             <Route path="Kade_Downloads" element={<KadeDownloads />} />
             <Route path="Kade_Description" element={<KadeDescription />} />
             <Route path="Kade_UserManual" element={<KadeUserManual />} />
+            <Route
+              path="EqWebSort_Downloads"
+              element={<EqWebSortDownloads />}
+            />
+            <Route
+              path="EqWebSort_Description"
+              element={<EqWebSortDescription />}
+            />
+            <Route
+              path="EqWebSort_UserManual"
+              element={<EqWebSortUserManual />}
+            />
+            <Route
+              path="EqWebConfig_Downloads"
+              element={<EqWebConfigDownloads />}
+            />
+            <Route
+              path="EqWebConfig_Description"
+              element={<EqWebConfigDescription />}
+            />
+            <Route
+              path="EqWebConfig_UserManual"
+              element={<EqWebConfigUserManual />}
+            />
           </Routes>
         </Content>
       </Container>
