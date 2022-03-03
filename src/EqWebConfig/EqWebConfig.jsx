@@ -1,6 +1,6 @@
 import React from "react";
 import image2 from "../assets/Configurator card group.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const EqWebConfig = () => {
@@ -14,15 +14,14 @@ const EqWebConfig = () => {
           EQ Web Sort Project
         </p>
         <LinkBar>
-          <div>
-            <Link to="/EqWebConfig_Description">Description</Link>
-          </div>{" "}
-          <div>
-            <Link to="/EqWebConfig_Downloads">Downloads</Link>
-          </div>
-          <div>
-            <Link to="/EqWebConfig_UserManual">User Manual</Link>
-          </div>
+          <a
+            className="App-link"
+            href="https://github.com/shawnbanasick/eq_web_configurator"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Description and Downloads
+          </a>
         </LinkBar>
       </div>{" "}
     </>
@@ -34,9 +33,15 @@ export default EqWebConfig;
 const LinkBar = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 2vw;
   margin-top: 0.25em;
   color: black;
   width: 85%; ;
 `;
+
+/*
+ <div>
+  <Link to="/EqWebConfig_Description">Description</Link>
+ </div>{" "}
+*/

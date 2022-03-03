@@ -7,7 +7,9 @@ const KenQAnalysis = () => {
       <img className="image__img" src={image4} alt="Ken-Q Analysis" />
       <div className="image__overlay image__overlay--primary">
         <div className="image__title">Ken-Q Analysis</div>
-        <p className="image__description">Online Q-Sort Analysis Software</p>
+        <p className="image__description">
+          Online Q-Sort Analysis Software <br /> for Teaching and Demonstration
+        </p>
         <div className="image__description">
           {" "}
           <a

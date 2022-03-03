@@ -24,9 +24,7 @@ function App() {
             </Link>
           </div>
           <div className="displayRow">
-            <div className="margin-Right smallHeaderText">
-              Teaching Software
-            </div>
+            <div className="margin-Right smallHeaderText">Other Software</div>
             <div className="smallHeaderText">Contact Me</div>
           </div>
         </HeaderBar>
